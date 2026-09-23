@@ -1,0 +1,58 @@
+# Board: Generic ESP32 Board (Generic)
+# Definition: definitions/boards/generic-esp32/manifest.yaml
+
+esphome:
+  name: distance-sensor
+  friendly_name: Distance Sensor
+
+esp32:
+  variant: esp32
+  framework:
+    type: esp-idf
+logger:
+  
+api:
+  encryption:
+    key: !secret distance_sensor__encryption_key
+  
+ota:
+  - platform: esphome
+
+wifi:
+  networks:
+    - ssid: IllinoisNet
+      eap:
+        identity: eklabel2
+        username: eklabel2
+        password: Iamamazing4220$$
+  power_save_mode: NONE
+        
+        
+  ap:
+    ssid: Distance Sensor Fallback Hotspot
+    password: "m5n4KxXXyDaL"
+  
+i2c:
+  sda: GPIO33
+  scl: GPIO25
+  scan: true
+
+sensor:
+  - platform: vl53l0x
+    name: Distance Sensor
+    id: sensor_vl53l0x_1
+    address: 0x29
+    update_interval: 100ms
+    filters: 
+    unit_of_measurement: mm
+    device_class: distance
+    accuracy_decimals: 1
+    long_range: true
+  
+    
+  
+captive_portal:
+  
+mdns:
+  
+  
