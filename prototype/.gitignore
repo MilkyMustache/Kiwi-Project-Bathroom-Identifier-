@@ -1,0 +1,4 @@
+wifi_reporter/config.h
+web/.env*
+!web/.env.example
+web/.vercel/

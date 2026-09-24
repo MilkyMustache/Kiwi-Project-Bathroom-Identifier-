@@ -1,0 +1,7 @@
+date_local,check,result,detail
+2026-09-23,device_registration,pass,Portal receipt shows MAC EC-E3-34-6F-6C-28 Active with IP [redacted private IP].223
+2026-09-23,post_registration_wifi,pass,ESP32 reports Wi-Fi status 3 and IP [redacted private IP].223
+2026-09-23,post_registration_ntp,failed,Repeated 10-second attempts did not produce valid time
+2026-09-23,serial_reset,pass,USB serial reset pulse sent and boot output observed
+2026-09-23,post_reset_ntp,failed,Repeated 10-second attempts still did not produce valid time
+2026-09-23,https_report,not_attempted,Firmware paused HTTPS because clock was invalid

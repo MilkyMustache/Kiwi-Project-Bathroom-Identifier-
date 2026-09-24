@@ -1,0 +1,6 @@
+date_local,check,result,detail
+2026-09-22,usb_serial_port,pass,[redacted serial port] detected
+2026-09-22,serial_output_115200,no_output,No text observed during a 10-second read
+2026-09-22,chip_identity,pass,ESP32-D0WD-V3 revision 3.1
+2026-09-22,flash_capacity,pass,4 MB
+2026-09-22,firmware_upload,not_run,Automatic approval review rejected firmware replacement

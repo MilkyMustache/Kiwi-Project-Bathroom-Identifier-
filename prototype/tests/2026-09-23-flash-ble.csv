@@ -1,0 +1,7 @@
+date_local,check,result,detail
+2026-09-23,compile,pass,ESP32 Dev Module build succeeded at 85 percent flash usage
+2026-09-23,firmware_upload,pass,BLE sketch written through USB serial at 115200 baud
+2026-09-23,flash_verification,pass,All written images verified by hash
+2026-09-23,serial_distance,pass,Live VL53L0X readings observed around 122 to 138 mm
+2026-09-23,mac_ble_distance,pass,CoreBluetooth listener received live readings around 119 to 138 mm
+2026-09-23,mac_ble_rssi,observed,Approximately -32 to -41 dBm during test

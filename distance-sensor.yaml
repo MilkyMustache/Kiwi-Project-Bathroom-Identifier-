@@ -20,17 +20,17 @@ ota:
 
 wifi:
   networks:
-    - ssid: IllinoisNet
+    - ssid: !secret campus_wifi_ssid
       eap:
-        identity: eklabel2
-        username: eklabel2
-        password: Iamamazing4220$$
+        identity: !secret illinoisnet_eap_identity
+        username: !secret illinoisnet_eap_username
+        password: !secret illinoisnet_eap_password
   power_save_mode: NONE
         
         
   ap:
     ssid: Distance Sensor Fallback Hotspot
-    password: "m5n4KxXXyDaL"
+    password: !secret distance_sensor_fallback_ap_password
   
 i2c:
   sda: GPIO33

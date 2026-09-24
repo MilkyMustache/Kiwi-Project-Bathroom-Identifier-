@@ -1,0 +1,10 @@
+date_local,time_local,check,result,detail
+2026-09-23,13:59,upload_921600,failed,Serial link lost before application image was written
+2026-09-23,14:00,upload_115200,pass,Application image written and hash verified
+2026-09-23,14:00:15,serial_report,pass,Sensor OK 37 mm and HTTP 200
+2026-09-23,14:00:15,public_api,pass,Online true with sensorOk true and distanceMm 37
+2026-09-23,14:00:30,serial_report,pass,Sensor OK 43 mm and HTTP 200
+2026-09-23,14:00:45,serial_report,pass,Sensor OK 39 mm and HTTP 200
+2026-09-23,14:01:00,serial_report,pass,Sensor OK 35 mm and HTTP 200
+2026-09-23,14:01:00,webpage,pass,Chrome displayed Sensor connected and latest distance 35 mm
+2026-09-23,14:01:15,serial_report,pass,Sensor OK 39 mm and HTTP 200
